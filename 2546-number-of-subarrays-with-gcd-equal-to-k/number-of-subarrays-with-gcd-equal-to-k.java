@@ -8,9 +8,6 @@ class Solution {
                 if(g==k){
                     count++;
                 }
-                else if(g<k){
-                    break;
-                }
             }
         }
         return count;
