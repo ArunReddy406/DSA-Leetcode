@@ -1,11 +1,14 @@
 class Solution {
     public int hammingWeight(int n) {
-        // int count = 0;
-        // while(n!=0){
-        //     n&=(n-1);
-        //     count++;
+        int count = 0;
+        while(n!=0){
+            if(n%2==1){
+                count++;
+            }
+           n/=2;
         
-        // }
-        return Integer.bitCount(n);
+        }
+        // return Integer.bitCount(n);
+        return count;
     }
 }
