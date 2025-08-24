@@ -10,14 +10,14 @@ class Solution {
             st.push(ch);
         }
        }
-    //   StringBuilder sb=new StringBuilder();
-    //  for(char ch:st){
-    //     sb.append(ch);
-    //  }
-    String str="";
-    for(int i=0;i<st.size();i++){
-        str+=st.get(i);
-    }
-    return str;
+      StringBuilder sb=new StringBuilder();
+     for(char ch:st){
+        sb.append(ch);
+     }
+    // String str="";
+    // for(int i=0;i<st.size();i++){
+    //     str+=st.get(i);
+    // }
+    return sb.toString();
     }
 }
