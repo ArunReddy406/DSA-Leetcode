@@ -19,9 +19,9 @@ class Solution {
                 odd++;
             }
           
+        }
          arr[0]=even;
            arr[1]=odd;
-        }
         return arr;
     }
 }
