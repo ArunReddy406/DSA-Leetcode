@@ -1,20 +1,22 @@
 class Solution {
     public int findChampion(int[][] grid) {
         int n=grid.length;
-        int c1=0;
-        int c2=0;
+        int max=0;
+        int ans=0;
         for(int i=0;i<n;i++){
-            boolean flag=true;
+             int count=0;
             for(int j=0;j<n;j++){
-                if(grid[j][i]==1){
-                    flag=false;
-                    break;
+                if(i!=j){
+                    if(grid[i][j]==1){
+                    count++;
+                    }
                 }
             }
-            if(flag){
-                 return i;
+            if(count>max){
+                max=count;
+                ans=i;
             }
         }
-        return -1;
+        return ans;
     }
 }
