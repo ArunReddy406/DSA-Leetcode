@@ -6,7 +6,7 @@ class Solution {
        reverse(nums,0,k-1);
        reverse(nums,k,n-1);
     }
-    public int reverse(int nums[],int start,int end){
+    public int reverse(int nums[],int start, int end){
         while(start<end){
             int temp=nums[start];
             nums[start]=nums[end];
@@ -14,6 +14,6 @@ class Solution {
             start++;
             end--;
         }
-        return start;
+        return end;
     }
 }
