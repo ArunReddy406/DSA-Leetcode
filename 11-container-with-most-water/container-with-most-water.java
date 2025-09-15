@@ -4,8 +4,9 @@ class Solution {
         int i=0;
         int j=height.length-1;
         while(i<j){
-            int min=Math.min(height[i],height[j]);
-            water=Math.max(water,min*(j-i));
+            int len=Math.min(height[i],height[j]);
+            int width=j-i;
+            water=Math.max(water,len*width);
             if(height[i]>height[j]){
                 j--;
             }
