@@ -23,7 +23,7 @@ class Solution {
         if(!map2.containsKey(key)){
             return false;
         }
-        if(!(map2.get(key)>=map1.get(key))){
+        if((map2.get(key)<map1.get(key))){
             return false;
         }
        }
