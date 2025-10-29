@@ -18,12 +18,12 @@ class Solution {
         else{
             mid=(n+1)/2;
         }
-        int sum=0;
+        int sum=n;
         int count=0;
         for(int i=nums.length-1;i>=0;i--){
-            sum+=nums[i];
+            sum-=nums[i];
             count++;
-            if(sum>=mid){
+            if(sum<=mid){
                 break;
             }
         }
