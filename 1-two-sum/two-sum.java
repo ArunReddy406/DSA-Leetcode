@@ -1,9 +1,9 @@
 class Solution {
     public int[] twoSum(int[] nums, int target) {
        int arr[]=new int[2];
-    //    if(nums=nullnums.length==0){
-    //     return arr;
-    //    }
+       if(nums.length==0||nums==null){
+        return arr;
+       }
        for(int i=0;i<nums.length;i++){
         for(int j=i+1;j<nums.length;j++){
             if(nums[i]+nums[j]==target){
