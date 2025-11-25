@@ -22,8 +22,6 @@ class Solution {
         else{
             res=Integer.parseInt(str);
         }
-        System.out.println(res);
-        long ans=sum*res;
-        return ans;
+        return sum*res;
     }
 }
