@@ -1,11 +1,11 @@
 class Solution {
     public int minimumFlips(int n) {
-        String s="";
-        while(n>0){
-            int rem=n%2;
-            s+=rem;
-            n/=2;
-        }
+        String s=Integer.toBinaryString(n);
+        // while(n>0){
+        //     int rem=n%2;
+        //     s+=rem;
+        //     n/=2;
+        // }
         int count=0;
         int i=0;
         int j=s.length()-1;
