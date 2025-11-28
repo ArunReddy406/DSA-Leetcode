@@ -16,12 +16,10 @@ class Solution {
             num/=10;
         }
         int res=0;
-        if(str.equals("")){
+        if(str.length()==0){
             return 0;
         }
-        else{
-            res=Integer.parseInt(str);
-        }
+        res=Integer.parseInt(str);
         return sum*res;
     }
 }
