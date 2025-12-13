@@ -1,9 +1,13 @@
 class Solution {
     public int countOdds(int low, int high) {
-        int sum=high-low+1;
-        if(low%2==0&&high%2==0){
-            return sum/2;
+        int count=0;
+        int diff=high-low;
+        if(low%2!=0&&high%2!=0){
+            return diff/2+1;
         }
-        return sum/2+1*((sum%2==0)?0:1);
+        else if(low%2!=0&&high%2==0||low%2==0&&high%2!=0){
+            return diff/2+1;
+        }
+        return diff/2;
     }
 }
