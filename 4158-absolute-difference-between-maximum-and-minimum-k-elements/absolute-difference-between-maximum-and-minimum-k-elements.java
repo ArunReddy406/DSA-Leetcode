@@ -9,8 +9,6 @@ class Solution {
         for(int i=nums.length-1;i>=nums.length-k;i--){
             max+=nums[i];
         }
-        System.out.println(min);
-        System.out.println(max);
         int ans=Math.abs(max-min);
         return ans;
     }
