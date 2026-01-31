@@ -4,10 +4,12 @@ class Solution {
         if(k<=1){
             return 0;
         }
+        int j=0;
         Arrays.sort(nums);
-        for(int i=0;i<=nums.length-k;i++){
-            int sum=nums[i+k-1]-nums[i];
+        for(int i=k-1;i<nums.length;i++){
+            int sum=nums[i]-nums[j];
             min=Math.min(min,sum);
+            j++;
         }
         return min;
     }
