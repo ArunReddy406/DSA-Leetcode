@@ -1,7 +1,7 @@
 class Solution {
     public int minimumDifference(int[] nums, int k) {
         int min=Integer.MAX_VALUE;
-        if(nums.length<=1){
+        if(k<=1){
             return 0;
         }
         Arrays.sort(nums);
