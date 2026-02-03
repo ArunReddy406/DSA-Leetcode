@@ -20,9 +20,6 @@ class Solution {
          while(i<n && nums[i]>nums[i-1]){
             i++;
         }
-        if(i==n){
-            return true;
-        }
-        return false;
+        return i==n;
     }
 }
